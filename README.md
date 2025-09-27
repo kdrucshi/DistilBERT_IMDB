@@ -22,22 +22,22 @@ A Natural Language Processing (NLP) application that leverages Hugging Face Tran
 
 **Learning Rate and Batch Size**
 
-- lr = 1e-5, batch size =16 -> Model shows eratic behaviour, thus shows alot of flutuations in validation and training curves.
-Good covergence can be seen on training curve but validation curve does shows much convergence with respect to training cruve. </br>
+- lr = 1e-5, batch size =16 -> Model shows eratic behaviour, thus alot of fluctuations in validation and training curves can be observed.
+Good covergence can be seen on training curve but validation curve does converges along with training curve. </br>
 </br><img width="277" height="202" alt="image" src="https://github.com/user-attachments/assets/618565a8-1061-4b02-a46f-f2bf55626d17" />
 <img width="285" height="204" alt="image" src="https://github.com/user-attachments/assets/3ec4490d-034a-4291-a90b-fe87cd67f928" /></br>
 
-- lr = 1e-5, batch size = 32 -> Model shows Convergence in validation and training curves but eratic behaviour continues to persists.</br>
+- lr = 1e-5, batch size = 32 -> Model shows Convergence in validation and training curves but eratic behaviour continues to persist.</br>
 </br><img width="286" height="199" alt="image" src="https://github.com/user-attachments/assets/8240784f-f251-46fe-98d7-3d00b0e9be54" />
 <img width="283" height="203" alt="image" src="https://github.com/user-attachments/assets/69e5e991-c44a-4e44-b834-d084c3931dc9" /></br>
 
-- lr = 1e-5, batch size = 64 -> Model clearly overfits the data, bigger validation loss values with respect to training loss values can be observed.</br>
+- lr = 1e-5, batch size = 64 -> Model clearly overfits the data, thus greater validation loss can be observed, where as training curve still converges.</br>
 </br><img width="286" height="202" alt="image" src="https://github.com/user-attachments/assets/f8741e5a-10fe-49ed-bba4-8541d5caeaa8" />
 <img width="276" height="201" alt="image" src="https://github.com/user-attachments/assets/2b350797-2767-4ddc-96d3-e43f386dbcbc" /></br>
 
-</br>Let's try with bigger learning rate with decay and batch size = 32, for better curves and convergence.
+</br>Let's try with bigger learning rate and decay, batch size = 32, for better curves and convergence.
 
-- lr = 2e-5, batch size = 32, lr_scheduler -> Better convergence can be seen, since validation and training curves converges together, with less fluctuations or less eratic behavious.</br>
+- lr = 2e-5, batch size = 32, lr_scheduler -> Better Convergence can be seen, since validation and training curves converges together, with less fluctuations and less eratic behaviour.</br>
 </br><img width="325" height="239" alt="image" src="https://github.com/user-attachments/assets/13fe491e-bf0c-4b32-acfa-6dc3bb82d51b" />
 <img width="325" height="239" alt="image" src="https://github.com/user-attachments/assets/9f382378-a00d-4d21-abf7-f23f818bc493" /></br>
 </br>*checkout full tensorboard: (see [full TensorBoard](https://huggingface.co/kdrucshi/DistilBERT_IMDB/tensorboard))* 
