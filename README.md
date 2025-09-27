@@ -38,7 +38,7 @@ Good covergence can be seen on training curve but validation curve does shows mu
 </br>Let's try with bigger learning rate with decay and batch size = 32, for better curves and convergence.
 
 - lr = 2e-5, batch size = 32, lr_scheduler -> Better convergence can be seen, since validation and training curves converges together, with less fluctuations or less eratic behavious.</br>
-</br><img width="314" height="231" alt="image" src="https://github.com/user-attachments/assets/13fe491e-bf0c-4b32-acfa-6dc3bb82d51b" />
+</br><img width="325" height="239" alt="image" src="https://github.com/user-attachments/assets/13fe491e-bf0c-4b32-acfa-6dc3bb82d51b" />
 <img width="325" height="239" alt="image" src="https://github.com/user-attachments/assets/9f382378-a00d-4d21-abf7-f23f818bc493" /></br>
 </br>*checkout full tensorboard: (see [full TensorBoard](https://huggingface.co/kdrucshi/DistilBERT_IMDB/tensorboard))* 
 
