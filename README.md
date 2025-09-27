@@ -75,3 +75,11 @@ Training Loss|	Epoch|	Step|	Validation Loss|	Accuracy|	F1|
 - Tokenizers 0.22.0</br>
 
 
+## 🚀 Run Locally
+```bash
+git clone https://github.com/kdrucshi/DistilBERT_IMDB
+cd DistilBERT_IMDB
+pip install -r requirements.txt
+python app.py
+```
+Visit for more : [![Open in Hugging Face Spaces](https://img.shields.io/badge/🤗-%20HuggingFaceRepo-yellow)](https://huggingface.co/kdrucshi/DistilBERT_IMDB)
