@@ -1,14 +1,8 @@
 # IMDB Sentiment Analysis with DistilBERT
-This model is a fine-tuned version of distilbert-base-uncased on an IMDB dataset. It is Fine tuned for Binary CLassification of movie reviews into "Positive" and "Negative" </br>
-</br>It achieves the following results on the evaluation set:
-
-- Loss: 0.2407
-- Accuracy: 0.9156
-- F1: 0.9153
-
+A Natural Language Processing (NLP) application that leverages Hugging Face Transformers. The model was fine-tuned on the IMDB dataset and achieves ~90% accuracy in sentiment classification. The project demonstrates end-to-end ML development — from data preprocessing, model training, evaluation, and hyperparameter tuning, to deployment with Gradio on Hugging Face Spaces.</br>
+</br>This model has been deployed using Gradio, kindly find the demo link below </br>
 **Demo:** 
-https://huggingface.co/spaces/kdrucshi/DistilBERT_IMDB-Gradio
-
+[![Open in Hugging Face Spaces](https://img.shields.io/badge/🤗-Try%20Demo-yellow)](https://huggingface.co/spaces/kdrucshi/DistilBERT_IMDB-Gradio)
 ## Dataset: [IMDB](https://huggingface.co/datasets/imdb)  
 
 - 25,000 movie reviews (train/test)  
@@ -19,6 +13,13 @@ https://huggingface.co/spaces/kdrucshi/DistilBERT_IMDB-Gradio
 - Fine-tuned for binary classification
 - Achieved ~90% accuracy on test set
 ## Training and evaluation data
+
+</br>It achieves the following results on the evaluation set:
+
+- Loss: 0.2407
+- Accuracy: 0.9156
+- F1: 0.9153</br>
+
 **Learning Rate and Batch Size**
 
 - lr = 1e-5, batch size =16 -> Model shows eratic behaviour, thus shows alot of flutuations in validation and training curves.
@@ -39,7 +40,7 @@ Good covergence can be seen on training curve but validation curve does shows mu
 - lr = 2e-5, batch size = 32, lr_scheduler -> Better convergence can be seen, since validation and training curves converges together, with less fluctuations or less eratic behavious.</br>
 </br><img width="314" height="231" alt="image" src="https://github.com/user-attachments/assets/13fe491e-bf0c-4b32-acfa-6dc3bb82d51b" />
 <img width="325" height="239" alt="image" src="https://github.com/user-attachments/assets/9f382378-a00d-4d21-abf7-f23f818bc493" /></br>
-</br>*checkout full tensorboard: https://huggingface.co/kdrucshi/DistilBERT_IMDB/tensorboard*
+</br>*checkout full tensorboard: (see [full TensorBoard](https://huggingface.co/kdrucshi/DistilBERT_IMDB/tensorboard))* 
 
 Training hyperparameters
 The following hyperparameters were used during training:
@@ -53,7 +54,9 @@ The following hyperparameters were used during training:
 - lr_scheduler_warmup_ratio: 0.06
 - num_epochs: 10
 - mixed_precision_training: Native AMP
+
 ## Training results
+
 Training Loss|	Epoch|	Step|	Validation Loss|	Accuracy|	F1|
 ------------|	-----|	----|	-------------|	--------|	--|
 0.5779|	0.16|	100|	0.5232|	0.8628|	0.8565|
@@ -69,4 +72,6 @@ Training Loss|	Epoch|	Step|	Validation Loss|	Accuracy|	F1|
 - Transformers 4.56.1
 - Pytorch 2.8.0+cu126
 - Datasets 4.0.0
-- Tokenizers 0.22.0
+- Tokenizers 0.22.0</br>
+
+
